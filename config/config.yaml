@@ -1,0 +1,13 @@
+# ──────────────────────────────────────────────
+#  Opération Robin — Configuration tactique
+#  Modifier les ports selon votre environnement.
+#  Ports < 1024 nécessitent les droits root.
+# ──────────────────────────────────────────────
+
+host:      "0.0.0.0"   # Écoute sur toutes les interfaces
+
+ssh_port:  2222        # Piège SSH  (22 en prod — nécessite root)
+http_port: 8080        # Piège HTTP (80 en prod — nécessite root)
+ftp_port:  2121        # Piège FTP  (21 en prod — nécessite root)
+
+timeout:   10          # Secondes avant fermeture d'une connexion inactive
